@@ -14,7 +14,7 @@ import tabpy_client
 # In[98]:
 
 
-df=pd.read_csv("C:/Users/ID68844/Desktop/Cross Sell/dummy_data2.csv")
+df=pd.read_csv("dummy_data.csv")
 
 
 # In[99]:
