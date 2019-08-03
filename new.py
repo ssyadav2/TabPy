@@ -120,7 +120,7 @@ def PCS(homecount, prim_amount, autocount, vehcount, max_age):
        clm_cnt_lst_36mo, clm_cnt_lst_60mo, clm_cnt_lst_84mo])
     a = model.predict(X).tolist()
     b = model.predict_proba(X).tolist()
-    c = max(b[0][0],b[0][1])
+    c = int(round(max(b[0][0],b[0][1]),2) * 100)
     a.append(c)    
     return a
 
