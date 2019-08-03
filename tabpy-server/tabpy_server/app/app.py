@@ -182,7 +182,7 @@ class TabPyApp:
                 self.settings[settings_key] = default_val
 
         set_parameter(SettingsParameters.Port, ConfigParameters.TABPY_PORT,
-                      default_val=8080, check_env_var=True)
+                      default_val=9004, check_env_var=True)
         set_parameter(SettingsParameters.ServerVersion, None,
                       default_val=__version__)
 
