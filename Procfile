@@ -1,1 +1,1 @@
-web: python3 tabpy-server/tabpy_server/tabpy.py
+web: ./startup.sh
