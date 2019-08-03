@@ -106,9 +106,7 @@ export PYTHONPATH="${TABPY_ROOT}/tabpy-server:${TABPY_ROOT}/tabpy-tools:$PYTHONP
 if [ -z $CONFIG ]; then
     echo Using default parameters.
     python3 tabpy-server/tabpy_server/tabpy.py
-    bg
-    sleep 1m
-    python3 ${TABPY_ROOT}/models/setup.py
+    python3 new.py
 else
     python3 tabpy-server/tabpy_server/tabpy.py --config=$CONFIG
 fi
