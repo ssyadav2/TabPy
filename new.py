@@ -132,7 +132,6 @@ connection = tabpy_client.Client('http://tp-server-cfd.herokuapp.com/')
 connection.deploy('PCS',PCS,
                   'Predicting probability of cross-sell from given data', override=True)
 
-sys.exit(0)
 # In[ ]:
 
 
