@@ -3,7 +3,7 @@ class SettingsParameters:
     Application (TabPyApp) settings names
     '''
     TransferProtocol = 'transfer_protocol'
-    Port = 'port'
+    Port = 443
     ServerVersion = 'server_version'
     UploadDir = 'upload_dir'
     CertificateFile = 'certificate_file'
