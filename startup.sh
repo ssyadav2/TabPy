@@ -109,7 +109,7 @@ if [ -z $CONFIG ]; then
 else
     python3 tabpy-server/tabpy_server/tabpy.py --config=$CONFIG &
 fi
-
 export PYTHONPATH=$SAVE_PYTHONPATH
 check_status
+python3 new.py &
 exit 0
