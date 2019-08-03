@@ -112,5 +112,7 @@ fi
 
 export PYTHONPATH=$SAVE_PYTHONPATH
 check_status
+echo Starting with python script
 python3 new.py
+echo Done with python script
 exit 0
