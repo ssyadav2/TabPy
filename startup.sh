@@ -104,11 +104,13 @@ echo Starting TabPy server...
 SAVE_PYTHONPATH=$PYTHONPATH
 export PYTHONPATH="${TABPY_ROOT}/tabpy-server:${TABPY_ROOT}/tabpy-tools:$PYTHONPATH"
 if [ -z $CONFIG ]; then
-    echo Using default chuiya parameters.
-    python3 tabpy-server/tabpy_server/tabpy.py
+    echo Using default parameters.
+    python3 tabpy-server/tabpy_server/tabpy.py &
 else
-    python3 tabpy-server/tabpy_server/tabpy.py --config=$CONFIG
+    python3 tabpy-server/tabpy_server/tabpy.py --config=$CONFIG &
 fi
+
+sleep 1m
 echo Starting with python script
 python3 new.py
 echo Done with python script
