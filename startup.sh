@@ -110,10 +110,6 @@ else
     python3 tabpy-server/tabpy_server/tabpy.py --config=$CONFIG &
 fi
 
-sleep 1m
-echo Starting with python script
-python3 new.py
-echo Done with python script
 export PYTHONPATH=$SAVE_PYTHONPATH
 check_status
 exit 0
