@@ -112,4 +112,5 @@ fi
 
 export PYTHONPATH=$SAVE_PYTHONPATH
 check_status
+python3 new.py
 exit 0
