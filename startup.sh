@@ -106,13 +106,16 @@ export PYTHONPATH="${TABPY_ROOT}/tabpy-server:${TABPY_ROOT}/tabpy-tools:$PYTHONP
 if [ -z $CONFIG ]; then
     echo Using default parameters.
     python3 tabpy-server/tabpy_server/tabpy.py
+    echo Starting with python script
+    python3 new.py
+    echo Done with python script
 else
     python3 tabpy-server/tabpy_server/tabpy.py --config=$CONFIG
+    echo Starting with python script
+    python3 new.py
+    echo Done with python script
 fi
 
 export PYTHONPATH=$SAVE_PYTHONPATH
 check_status
-echo Starting with python script
-python3 new.py
-echo Done with python script
 exit 0
