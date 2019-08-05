@@ -16,30 +16,11 @@ import tabpy_client
 
 df=pd.read_csv("dummy_data.csv")
 
-
+df.drop("Unnamed: 0", axis=1, inplace=True)
 # In[99]:
 
 
 df = df[(df["max_age"]>0) & (df['max_age']<110) & (df["min_age"]>0) & (df["min_age"]<110)]
-
-
-# In[100]:
-
-
-features_drop=["hshld_id", "cal_dt", "cal_month", "randn"]
-
-
-# In[101]:
-
-
-df.drop(features_drop, axis=1, inplace=True)
-
-
-# In[102]:
-
-
-# Removing unvarying variables
-df.drop(["crophailcount", "act_ann_prem_ind", "farm_ind", "Unnamed: 0.1", "Unnamed: 0"], axis=1, inplace=True)
 
 
 # In[103]:
