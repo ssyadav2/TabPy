@@ -126,7 +126,7 @@ def PCS(homecount, prim_amount, autocount, vehcount, max_age):
 
 
 # In[73]:
-connection = tabpy_client.Client('http://tp-server-cfd2.herokuapp.com/')
+connection = tabpy_client.Client('http://tp-server-cfd.herokuapp.com/')
 connection.deploy('PCS',PCS,
                   'Predicting probability of cross-sell from given data', override=True)
 
